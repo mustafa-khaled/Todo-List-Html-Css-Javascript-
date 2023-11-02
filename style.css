@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+button,
+i {
+  cursor: pointer;
+}
+
+.container {
+  width: 600px;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: 90%;
+  }
+}
+
+button {
+  padding: 5px 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+
+input {
+  width: 100%;
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: hsl(233, 11%, 84%);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+input::placeholder {
+  color: hsl(280, 87%, 65%);
+}
+
+main {
+  background-color: hsl(235, 21%, 11%);
+  color: hsl(233, 11%, 84%);
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+form {
+  background-color: hsl(235, 24%, 19%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+form button {
+  width: 100px;
+  background-image: linear-gradient(hsl(192, 100%, 67%), hsl(280, 87%, 65%));
+}
+
+.tasks {
+  margin-top: 30px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: hsl(235, 24%, 19%);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 10px;
+}
+.task.done {
+  opacity: 0.6;
+}
+
+.task .content {
+  width: 70%;
+}
+
+.edit-btn,
+.delete-btn,
+.done-btn {
+  background-color: hsl(235, 21%, 11%);
+  color: hsl(233, 11%, 84%);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
